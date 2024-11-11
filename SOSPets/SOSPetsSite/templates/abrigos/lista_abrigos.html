@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+SOS Pets
+{% endblock %}
+
+{% block content %}
+<h2>Lista de abrigos</h2>
+<div>Aqui está a lista de abrigos cadastrados</div>
+<div>
+    <ul>
+        {% for abrigo in abrigos %}
+            <li><a href="#">{{abrigo.nome}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
